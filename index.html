@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="cứ bấm vào đi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="tit">Cứ bấm vào đây đi</title>
+</head>
+<style>
+    .mT {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        position: relative;
+        font-size: 90px;
+        color: red;
+        opacity: 1;
+        animation-name: keyframe1;
+        animation-duration: 1s;
+    }
+
+    @keyframes keyframe1 {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+
+    .tim {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        position: relative;
+        font-size: 90px;
+        color: red;
+        opacity: 1;
+        animation-name: keyframe1;
+        animation-duration: 1s;
+        animation-delay: 5s;
+    }
+</style>
+
+<body style="background-color: black;">
+    <h1 id="main" align="center" style="position: absolute; top: 150px; margin-left: 280px;" class="mT">Cậu đợi
+        5 giây nha!</h1>
+    <h1 align="center" style="display: none; position: absolute; top: 150px; margin-left: 650px;" id=timer class="tim">6
+    </h1>
+    <img src="hb.jpg" alt="HB" id="img" style="display: none; width: 1230px;">
+    <iframe class="audio" src="song.mp3" frameborder="0" id="aud" style="display:none; position: absolute; top: 10px;"></iframe>
+</body>
+<script src="js.js"></script>
+
+</html>

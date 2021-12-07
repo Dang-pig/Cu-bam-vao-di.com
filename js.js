@@ -18,7 +18,7 @@ function countDown() {
     timer.innerText = time
     if (numLoop == 5) {
         clearInterval(countDown2)
-        hapbir()
+        setTimeOut(hapbir,2000)
     }
     numLoop++
 }
